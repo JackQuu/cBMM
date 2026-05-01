@@ -67,3 +67,7 @@ python demo.py
 - `loss_history`: loss values over iterations
 - `n_iter`: number of iterations executed
 - `ind_omega`: input observation mask
+
+## Contact
+
+Please reach out to xiaoqian.liu@ucr.edu and xinhao.qu@email.ucr.edu for any questions. 
