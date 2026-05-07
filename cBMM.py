@@ -155,17 +155,10 @@ def _cBMM_impl(Y, r, sigma, ind_omega,
         if np.any(V1 < 0):
             raise ValueError("init_V1 must be non-negative.")
     else:
-        Y_svd = Y.copy()
-        if use_mask:
-            Y_svd[~Wb] = 0
-        U_s, d, Vt_s = np.linalg.svd(Y_svd, full_matrices=False)
-        U_s  = U_s[:, :r]
-        d_r  = d[:r]
-        Vt_s = Vt_s[:r, :]
-        s = np.sqrt(np.maximum(d_r, 0.0))
-        U1 = U_s * s                          
-        V1 = np.abs(Vt_s.T * s)
-        v2 = np.zeros(n)
+        rng = np.random.default_rng(42)
+        U1 = rng.standard_normal((m, r))
+        V1 = np.exp(rng.standard_normal((n, r)))
+        v2 = rng.standard_normal(n)
 
     # scale control
     M0 = U1 @ V1.T + v2[None, :]
@@ -176,7 +169,7 @@ def _cBMM_impl(Y, r, sigma, ind_omega,
         V1 = V1 / scale0
         v2 = v2 / scale0
 
-    Xtilde       = U1 @ V1.T + v2[None, :]
+    Xtilde = U1 @ V1.T + v2[None, :]
     # initial surrogate
     Ytilde, loss_old = surrogate_and_loss(Y, Xtilde, sigma, Wb)
     if use_mask:
