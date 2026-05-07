@@ -1,7 +1,7 @@
 # An Interpretable and Scalable Framework for Evaluating Large Language Models
 **Authors:** Xinhao Qu, Qiang Heng, Hao Zeng, Xiaoqian Liu (2026)
 
-This repository contains all code needed to reproduce the experiments in the manuscript, along with the benchmark suite dataset `Y_MATH-500.csv`.
+This repository contains all code needed to reproduce the experiments in the manuscript.
 
 ## Dependencies
 
