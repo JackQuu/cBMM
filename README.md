@@ -1,6 +1,7 @@
 # An Interpretable and Scalable Framework for Evaluating Large Language Models
 **Authors:** Xinhao Qu, Qiang Heng, Hao Zeng, Xiaoqian Liu (2026)
-**arXiv:** [https://arxiv.org/abs/2605.07046](https://arxiv.org/abs/2605.07046)
+
+**arXiv preprint:** [https://arxiv.org/abs/2605.07046](https://arxiv.org/abs/2605.07046)
 
 <p align="center">
   <img src="assets/icon.svg" alt="cBMM — LLM evaluation response matrix" width="100%" style="max-width: 720px; height: auto;"/>
