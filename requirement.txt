@@ -1,3 +1,7 @@
 numpy
 scipy
+pandas
 threadpoolctl
+py-irt
+pyro-ppl
+torch

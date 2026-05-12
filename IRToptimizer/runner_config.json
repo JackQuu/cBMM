@@ -1,0 +1,26 @@
+{
+  "methods": ["py-irt", "cbmm"],
+  "simulation": {
+    "N": 80,
+    "J": 40,
+    "r_true": 2,
+    "sigma": 1.0,
+    "spiky": false,
+    "a_zero_prop": 0.0
+  },
+  "missingness": {
+    "val_ratio": 0.2,
+    "missing_mechanism": "MCAR",
+    "mar_slope": 2.0,
+    "mnar_other_scale": 0.0,
+    "mnar_col_prob": 1.0
+  },
+  "optimizer": {
+    "max_iter": 1000
+  },
+  "replicates": {
+    "n_rep": 2,
+    "base_seed": 1
+  },
+  "n_cores": 1
+}

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="430" viewBox="0 0 680 430">
+<title>LLM Evaluation Response Matrix</title>
+<desc>Response matrix Y: rows are benchmark questions, columns are different LLMs; green denotes a correct answer (+1), red denotes an incorrect answer (-1), and shaded gray denotes a missing entry.</desc>
+<style>
+  text { font-family: "Helvetica Neue", "Arial", sans-serif; }
+  .th { font-size: 14px; font-weight: 500; fill: #2C2C2A; }
+  .ts { font-size: 12px; fill: #5F5E5A; }
+</style>
+<defs>
+<pattern id="missing" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+<rect width="6" height="6" fill="#F1EFE8"/>
+<line x1="0" y1="0" x2="0" y2="6" stroke="#B4B2A9" stroke-width="1.2"/>
+</pattern>
+</defs>
+
+<!-- Top: column header -->
+<text class="th" x="360" y="36" text-anchor="middle">LLM 1, 2, ..., N</text>
+<text class="ts" x="360" y="54" text-anchor="middle" fill="#888780">Different large language models</text>
+
+<!-- Left: row header -->
+<g transform="translate(140, 230) rotate(-90)">
+<text class="th" x="0" y="0" text-anchor="middle">Question 1, 2, ..., J</text>
+<text class="ts" x="0" y="18" text-anchor="middle" fill="#888780">Benchmark questions</text>
+</g>
+
+<!-- Row 1 -->
+<rect x="180" y="70" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="210" y="70" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="240" y="70" width="30" height="30" fill="#E24B4A" stroke="white" stroke-width="1"/>
+<rect x="270" y="70" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="300" y="70" width="30" height="30" fill="url(#missing)" stroke="white" stroke-width="1"/>
+<rect x="330" y="70" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="360" y="70" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="390" y="70" width="30" height="30" fill="#E24B4A" stroke="white" stroke-width="1"/>
+<rect x="420" y="70" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="450" y="70" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="480" y="70" width="30" height="30" fill="url(#missing)" stroke="white" stroke-width="1"/>
+<rect x="510" y="70" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+
+<!-- Row 2 -->
+<rect x="180" y="100" width="30" height="30" fill="#E24B4A" stroke="white" stroke-width="1"/>
+<rect x="210" y="100" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="240" y="100" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="270" y="100" width="30" height="30" fill="#E24B4A" stroke="white" stroke-width="1"/>
+<rect x="300" y="100" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="330" y="100" width="30" height="30" fill="#E24B4A" stroke="white" stroke-width="1"/>
+<rect x="360" y="100" width="30" height="30" fill="url(#missing)" stroke="white" stroke-width="1"/>
+<rect x="390" y="100" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="420" y="100" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="450" y="100" width="30" height="30" fill="#E24B4A" stroke="white" stroke-width="1"/>
+<rect x="480" y="100" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="510" y="100" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+
+<!-- Row 3 -->
+<rect x="180" y="130" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="210" y="130" width="30" height="30" fill="url(#missing)" stroke="white" stroke-width="1"/>
+<rect x="240" y="130" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="270" y="130" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="300" y="130" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="330" y="130" width="30" height="30" fill="#E24B4A" stroke="white" stroke-width="1"/>
+<rect x="360" y="130" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="390" y="130" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="420" y="130" width="30" height="30" fill="#E24B4A" stroke="white" stroke-width="1"/>
+<rect x="450" y="130" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="480" y="130" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="510" y="130" width="30" height="30" fill="#E24B4A" stroke="white" stroke-width="1"/>
+
+<!-- Row 4 dots -->
+<text class="th" x="360" y="182" text-anchor="middle" fill="#888780">. . .</text>
+
+<!-- Row 5 -->
+<rect x="180" y="200" width="30" height="30" fill="#E24B4A" stroke="white" stroke-width="1"/>
+<rect x="210" y="200" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="240" y="200" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="270" y="200" width="30" height="30" fill="url(#missing)" stroke="white" stroke-width="1"/>
+<rect x="300" y="200" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="330" y="200" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="360" y="200" width="30" height="30" fill="#E24B4A" stroke="white" stroke-width="1"/>
+<rect x="390" y="200" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="420" y="200" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="450" y="200" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="480" y="200" width="30" height="30" fill="#E24B4A" stroke="white" stroke-width="1"/>
+<rect x="510" y="200" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+
+<!-- Row 6 -->
+<rect x="180" y="230" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="210" y="230" width="30" height="30" fill="#E24B4A" stroke="white" stroke-width="1"/>
+<rect x="240" y="230" width="30" height="30" fill="url(#missing)" stroke="white" stroke-width="1"/>
+<rect x="270" y="230" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="300" y="230" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="330" y="230" width="30" height="30" fill="#E24B4A" stroke="white" stroke-width="1"/>
+<rect x="360" y="230" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="390" y="230" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="420" y="230" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="450" y="230" width="30" height="30" fill="#E24B4A" stroke="white" stroke-width="1"/>
+<rect x="480" y="230" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="510" y="230" width="30" height="30" fill="url(#missing)" stroke="white" stroke-width="1"/>
+
+<!-- Row 7 -->
+<rect x="180" y="260" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="210" y="260" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="240" y="260" width="30" height="30" fill="#E24B4A" stroke="white" stroke-width="1"/>
+<rect x="270" y="260" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="300" y="260" width="30" height="30" fill="#E24B4A" stroke="white" stroke-width="1"/>
+<rect x="330" y="260" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="360" y="260" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="390" y="260" width="30" height="30" fill="url(#missing)" stroke="white" stroke-width="1"/>
+<rect x="420" y="260" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="450" y="260" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="480" y="260" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="510" y="260" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+
+<!-- Row 8 dots -->
+<text class="th" x="360" y="312" text-anchor="middle" fill="#888780">. . .</text>
+
+<!-- Row 9 -->
+<rect x="180" y="330" width="30" height="30" fill="url(#missing)" stroke="white" stroke-width="1"/>
+<rect x="210" y="330" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="240" y="330" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="270" y="330" width="30" height="30" fill="#E24B4A" stroke="white" stroke-width="1"/>
+<rect x="300" y="330" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="330" y="330" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="360" y="330" width="30" height="30" fill="#E24B4A" stroke="white" stroke-width="1"/>
+<rect x="390" y="330" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="420" y="330" width="30" height="30" fill="url(#missing)" stroke="white" stroke-width="1"/>
+<rect x="450" y="330" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="480" y="330" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="510" y="330" width="30" height="30" fill="#E24B4A" stroke="white" stroke-width="1"/>
+
+<!-- Row 10 -->
+<rect x="180" y="360" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="210" y="360" width="30" height="30" fill="#E24B4A" stroke="white" stroke-width="1"/>
+<rect x="240" y="360" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="270" y="360" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="300" y="360" width="30" height="30" fill="url(#missing)" stroke="white" stroke-width="1"/>
+<rect x="330" y="360" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="360" y="360" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="390" y="360" width="30" height="30" fill="#E24B4A" stroke="white" stroke-width="1"/>
+<rect x="420" y="360" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="450" y="360" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+<rect x="480" y="360" width="30" height="30" fill="#E24B4A" stroke="white" stroke-width="1"/>
+<rect x="510" y="360" width="30" height="30" fill="#97C459" stroke="white" stroke-width="1"/>
+
+<!-- Right dots -->
+<text class="th" x="555" y="234" text-anchor="middle" fill="#888780">. . .</text>
+
+<!-- Bottom legend -->
+<rect x="140" y="400" width="16" height="16" fill="#97C459" stroke="white" stroke-width="1"/>
+<text class="ts" x="162" y="412">+1 (correct)</text>
+<rect x="280" y="400" width="16" height="16" fill="#E24B4A" stroke="white" stroke-width="1"/>
+<text class="ts" x="302" y="412">−1 (incorrect)</text>
+<rect x="430" y="400" width="16" height="16" fill="url(#missing)" stroke="#B4B2A9" stroke-width="0.5"/>
+<text class="ts" x="452" y="412">missing (unobserved)</text>
+
+</svg>
